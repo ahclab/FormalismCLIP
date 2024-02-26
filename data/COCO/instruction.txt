@@ -1,0 +1,11 @@
+Download from https://cocodataset.org/#download the following image directories.
+These three directories are to be put in the COCO directory
+
+Images :
+  2014 Train images
+  2014 Val images 
+  2014 Test images 
+
+And from https://www.kaggle.com/datasets/shtvkumar/karpathy-splits, download the file dataset_coco.json. 
+This is the Karpathy split according to which the above images are classified. 
+The file should be placed inside the COCO directory, but outside the above three directories. 
