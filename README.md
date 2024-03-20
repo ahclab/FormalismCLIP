@@ -26,7 +26,7 @@ the structural information. This preprocess was done before Chat-GPT was invente
 
 The dataset doesn't supply with structural information the sample which shares the meaning with previous samples but is matched with different visual images. Also, the experimental setups make it crucial that samples with the same text but different structures, which isn't reflected in the original dataset. For this, we implement the following code in the terminal:
 
-'''bash 
+```bash 
 python data/LAVA/filesplit.py 
 
 This will create the following data splits; train.json, val.json, and tst.json 
