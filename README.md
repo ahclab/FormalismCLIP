@@ -34,7 +34,7 @@ This will create the following data splits; train.json, val.json, and tst.json
 
 ## Models 
 
-Models treated throughout our research comprises of a baseline and 5 proposals. 
+Models treated throughout our research comprises of a baseline and 4 proposals. 
 
 ### Baseline 
 
@@ -49,3 +49,79 @@ python src/baseline/pureclip/cocotest.py          # Test on COCO, could also be 
 
 python src/baseline/pureclip/lavatest.py          # Test on LAVA 
 ```
+
+
+### Tree CLIP (Proposal No.1) 
+
+CLIP finetuned with linearised syntax trees.
+
+```bash
+python src/baseline/treeclip/mirucocotrain.py     # Train on COCO
+
+python src/baseline/treeclip/lavatrain.py        # Train on LAVA, This could also be used for training on both COCO and LAVA, by uploading the model inside the folder 'cocomodels' before the training session 
+
+python src/baseline/treeclip/cocotest.py          # Test on COCO, could also be used for COCO-LAVA testing 
+
+python src/baseline/treeclip/lavatest.py          # Test on LAVA 
+```
+
+### GCN CLIP (Proposal No.2) 
+
+CLIP with semantic graphs as inputs. 
+
+```bash
+
+
+python src/proposal/GCN/cocotrain.py     # Train on COCO
+
+python src/proposal/GCN/lavatrain.py        # Train on LAVA, This could also be used for training on both COCO and LAVA, by uploading the model inside the folder 'cocomodels' before the training session 
+
+python src/proposal/GCN/cocotesting.py          # Test on COCO, could also be used for COCO-LAVA testing 
+
+python src/proposal/GCN/lavatesting.py          # Test on LAVA 
+```
+
+
+### Separate Encodings of Syntax Tree (Proposal No.3) 
+
+This model leveraged as language encoder the syntax tree encoder from the paper [Transformer-Based Neural Text Generation with Syntactic Guidance](https://arxiv.org/abs/2010.01737).    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
