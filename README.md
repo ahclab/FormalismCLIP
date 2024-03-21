@@ -90,12 +90,12 @@ In order to implement this model, follow these instructions step by step:
 
 1. Clone the repository https://github.com/Yinghao-Li/GuiGen inside the GuiG folder in this repository. That makes the structure 
 
-
+```
 GuiG/
   | 
   |------ GuiGen
   |______ CLIP
-
+```
 2. 
 
 
