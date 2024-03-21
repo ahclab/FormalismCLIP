@@ -30,3 +30,22 @@ The dataset doesn't supply with structural information the sample which shares t
 python data/LAVA/filesplit.py 
 ```
 This will create the following data splits; train.json, val.json, and tst.json 
+
+
+## Models 
+
+Models treated throughout our research comprises of a baseline and 5 proposals. 
+
+### Baseline 
+
+Original CLIP trained on pure texts. 
+
+```bash
+python src/baseline/pureclip/purecocotrain.py     # Train on COCO
+
+python src/baseline/pureclip/lava_train.py        # Train on LAVA, This could also be used for training on both COCO and LAVA, by uploading the model inside the folder 'cocomodels' before the training session 
+
+python src/baseline/pureclip/cocotest.py          # Test on COCO, could also be used for COCO-LAVA testing 
+
+python src/baseline/pureclip/lavatest.py          # Test on LAVA 
+```
