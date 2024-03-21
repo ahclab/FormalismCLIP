@@ -96,7 +96,42 @@ GuiG/
   |------ GuiGen
   |______ CLIP
 ```
-2. 
+2. Move the CLIP folder inside the GuiGen folder.
+3. Enter the CLIP folder and implement the following codes
+
+```bash
+
+
+python cocotrain.py     # Train on COCO
+
+python lavatrain.py        # Train on LAVA, This could also be used for training on both COCO and LAVA, by uploading the model inside the folder 'cocomodels' before the training session 
+
+python cocotesting.py          # Test on COCO, could also be used for COCO-LAVA testing 
+
+python lavatesting.py          # Test on LAVA 
+```
+
+
+### Recursive Encodings of Syntax Tree (Proposal No.4) 
+
+This model is inspired from the paper [Transformer Grammars: Augmenting Transformer Language Models with Syntactic Inductive Biases at Scale](https://aclanthology.org/2022.tacl-1.81/)
+
+Following is the implementation codes 
+
+
+```bash
+
+
+python src/proposal/TG/TG_COCOtrain.py     # Train on COCO
+
+python src/proposal/TG/TG_LAVAtrain.py        # Train on LAVA, This could also be used for training on both COCO and LAVA, by uploading the model inside the folder 'cocomodels' before the training session 
+
+python src/proposal/TG/cocotesting.py          # Test on COCO, could also be used for COCO-LAVA testing 
+
+python src/proposal/TG/lavatesting.py          # Test on LAVA 
+```
+
+
 
 
 
