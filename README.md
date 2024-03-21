@@ -86,9 +86,17 @@ python src/proposal/GCN/lavatesting.py          # Test on LAVA
 
 This model leveraged as language encoder the syntax tree encoder from the paper [Transformer-Based Neural Text Generation with Syntactic Guidance](https://arxiv.org/abs/2010.01737).    
 
+In order to implement this model, follow these instructions step by step: 
+
+1. Clone the repository https://github.com/Yinghao-Li/GuiGen inside the GuiG folder in this repository. That makes the structure 
 
 
+GuiG/
+  | 
+  |------ GuiGen
+  |______ CLIP
 
+2. 
 
 
 
